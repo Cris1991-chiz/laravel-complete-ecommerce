@@ -1,13 +1,3 @@
-<div class="profile">
-    @if(auth()->user()->profileImage())
-    <img src="{{asset(auth()->user()->profileImage())}}" alt="">
-    @else
-    <img src="{{asset('storage/profile/no_profile_image.png')}}" alt="">
-    @endif
-    <p><b>{{auth()->user()->name}}</b></p>
-    <p>{{auth()->user()->email}}</p>
-    <a href="#" data-toggle="modal" data-target="#userProfile" id="edit-profile">EDIT</a> 
-</div>
 <div class="profile-ext">
     <div class="orders-container">
         <div class="row-count">

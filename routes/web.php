@@ -79,10 +79,6 @@ Route::middleware('auth')->group(function () {
 
 Auth::routes();
 
-// Route::get('/user-bill-add', function() {
-//     return View::make('partials.modal.billing-address');
-// });
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 

@@ -17,8 +17,18 @@
     <div class="btn-home"><a href="{{route('home.index')}}"><i class="fa fa-home"></i></a><span class="select">My Account</span></div>
     <div class="account-container">
         <div class="col-account">
+            <div class="profile">
+                @if(auth()->user()->profileImage())
+                <img src="{{asset(auth()->user()->profileImage())}}" alt="">
+                @else
+                <img src="{{asset('storage/profile/no_profile_image.png')}}" alt="">
+                @endif
+                <p><b>{{auth()->user()->name}}</b></p>
+                <p>{{auth()->user()->email}}</p>
+                <a href="{{route('account.edit')}}" id="edit-profile">EDIT</a> 
+            </div>
             
-             @include('partials.user.profile')
+            @include('partials.user.profile')
         </div>              
         <div class="account-nav">
             <ul>
