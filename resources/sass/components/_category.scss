@@ -1,0 +1,50 @@
+.category-container {
+    overflow: hidden;
+    background-color: #303030;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    li {
+        list-style-type: none;
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+        padding: 5px 30px;
+
+        &.active {
+            background-color: $background-color-3;
+        }
+    }
+}
+
+.row-category-btn {
+    width: 1290px;
+    margin: auto;
+   
+    .btn-primary {
+        width: 200px;
+        height: 50px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+}
+
+/*----slider scss----*/
+.slider{
+    margin-top: 0;
+    
+    .carousel-inner{
+        max-height: 350px !important;
+    }
+}
+
+.carousel-indicators{
+    z-index: 1 !important;
+}

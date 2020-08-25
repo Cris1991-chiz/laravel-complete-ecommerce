@@ -1,0 +1,118 @@
+/* social media button */
+.media-btn-fb {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background-color: $fb-color;
+    border-radius: 50%;
+
+    .fa-facebook {
+        line-height: 45px;
+        margin-left: 11px;
+        font-size: 25px;
+        color: $tertiary-color;
+    }
+}
+
+.media-btn-insta {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: $instagram-color;
+    border-radius: 50%;
+
+    .fa-instagram {
+        line-height: 45px;
+        margin-left: 11px;
+        font-size: 25px;
+        color: $tertiary-color;
+    }
+}
+
+.media-btn-twit {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: $twitter-color;
+    border-radius: 50%;
+
+    .fa-twitter {
+        line-height: 45px;
+        margin-left: 11px;
+        font-size: 25px;
+        color: $tertiary-color;
+    }
+}
+
+.media-btn-app {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: $watsapp-color;
+    border-radius: 50%;
+
+    .fa-whatsapp {
+        line-height: 45px;
+        margin-left: 12px;
+        font-size: 25px;
+        color: $tertiary-color;
+    }
+}
+
+.fa-star, .fa-star-half-o {
+    color: $text-color-1;
+}
+
+
+.media-btn-cart {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: $primary-color;
+    border-radius: 50%;
+
+    .fa-shopping-cart {
+        line-height: 45px;
+        margin-left: 11px;
+        font-size: 20px;
+        color: $tertiary-color;
+    }
+}
+
+
+.media-btn-heart {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: $primary-color;
+    border-radius: 50%;
+
+    .fa-heart {
+        line-height: 45px;
+        margin-left: 13px;
+        font-size: 20px;
+        color: $tertiary-color;
+    }
+}
+
+.media-btn-trash {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px 10px 0;
+    background: $secondary-color;
+    border-radius: 50%;
+
+    .fa-trash-alt {
+        line-height: 45px;
+        margin-left: 14px;
+        font-size: 20px;
+        color: $tertiary-color;
+    }
+}

@@ -1,0 +1,56 @@
+.col-reg-container {
+    display: flex;
+    justify-content: center;
+}
+
+.reg-container {
+    border-radius: 5px;
+    background-color: $background-color-4;
+    padding: 20px;
+    width: 55%;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.register {
+    margin-bottom: 10px;
+    
+    .register-title {
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 15px;
+        font-size: 20px;
+        padding: 7px 2px;
+    }
+
+    .fa-plane, .fa-credit-card {
+        color: $primary-color;
+    }
+
+    .icon {
+        padding: 7px;
+        border-radius: 4px;
+        background: $primary-color;
+        color: $tertiary-color;
+        min-width: 35px;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .reg-input-form {
+        margin-left: 20px;
+    }
+
+    label {
+        margin-bottom: 0em;
+        margin-top: 8px;
+    }
+}
+
+.newsletter {
+    border-radius: 5px;
+    background-color: $background-color-4;
+    padding: 20px;
+    width: 30%;
+    height: 280px;
+    margin-top: 20px;
+}

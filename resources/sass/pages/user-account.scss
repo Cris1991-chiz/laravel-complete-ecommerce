@@ -1,0 +1,174 @@
+.account-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-account {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: $radius;
+    background-color: $background-color-4;
+    border: 0.5px solid $border-color-2;
+    padding: 15px;
+}
+
+.profile { 
+    text-align: center;
+    width: 250px;
+
+    img {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    p {
+        margin-bottom: 0em;
+    }
+    
+    a {
+        color: $primary-color;
+
+        &:hover {
+            text-decoration: none;           
+        }
+    }
+}
+
+.profile-ext {
+    display: flex;
+    text-align: center;
+    width: 25%;
+    height: 100px;
+    justify-content: flex-end;
+
+    .orders-container {
+        margin-right: 20px;
+    }
+
+    .row-count {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: $button-1;
+        border-radius: 50%;
+    }
+
+    .reward-count {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: $text-color-2;
+        border-radius: 50%;
+    }
+
+    .rewards-container {
+        margin-left: 20px;
+    }
+    
+    .count{
+        line-height: 100px;
+        font-size: 35px;
+        font-weight: bold;
+        color: $tertiary-color;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: bold;
+        color: $text-color-1;
+        margin-top: 5px;
+    }
+}
+
+.account-nav {
+    overflow: hidden;
+    background-color: $secondary-color;
+    border-radius: $radius;
+    margin-top: 50px;
+   
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+
+        li {
+            width: 25%;
+            line-height: 40px;
+            text-align: center;
+            
+  
+            a {
+                text-decoration: none;
+                color: $tertiary-color;
+                letter-spacing: 2px;
+                font-size: 20px;
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                &.highlight {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.user-content {
+    margin: 20px;
+    
+    .content-title {
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 20px;
+        font-size: 20px;
+        padding: 7px 2px;
+    }
+
+    .icon {
+        padding: 7px;
+        border-radius: 4px;
+        background: $primary-color;
+        color: $tertiary-color;
+        min-width: 35px;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .acct-address {
+        overflow: hidden;
+
+        address {
+            margin-top: 5px;
+            float: left;
+            display: block;
+        }
+
+        .btn-a {
+            float: right;
+        }
+    }
+}
+
+.btn-pwd {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.img-file {
+    display: none;
+}
+
+.change-pwd {
+    display: none;
+}
+
+.no-display {
+    display: none;
+}

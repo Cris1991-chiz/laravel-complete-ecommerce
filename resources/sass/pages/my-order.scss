@@ -1,0 +1,210 @@
+.col-order {
+    width: 900px;
+    margin: auto;
+}
+
+.my-order {
+    border: 0.5px solid $border-color-2;
+    margin-bottom: 15px; 
+    overflow: hidden;
+    transition: all 0.4s;
+    overflow-y: auto;
+    cursor: pointer;
+    max-height: 220px;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 8px 8px 8px 8px;
+        background-color: $background-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $primary-color;
+        border-radius: 8px 8px 8px 8px;
+    }
+
+    .order {
+        border: 1.5px solid $border-color-2;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    ul.order-nav-tag {
+        overflow: hidden;
+        list-style-type: none;          
+        border-bottom: 0.5px solid $border-color-2;
+        margin-bottom: 10px;
+        padding-inline-start: 0;
+        line-height: 25px;
+
+        .name {
+            float: left;
+        }
+
+        li {    
+            float: right;
+            padding: 4px 55px;              
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    .product-order {
+        overflow: hidden;
+        width: 100%;
+
+        .order-details {
+            display: inline-flex;
+            width: 45%;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    width: 150px;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+            
+            .product-title {
+                margin-top: 10px;
+                padding-left: 10px;
+                padding-right: 15px;
+                font-size: 14px;
+
+                .order-description {
+                    height: 50px;
+
+                    a {
+                        text-decoration: none;
+                        color: $secondary-color;
+                        font-weight: bold;
+                    }                          
+                }
+            }
+        }
+
+        .order-address {
+            float: right;
+            
+            .col-address {
+                display: flex;
+                padding-right: 10px;
+
+                .shipping-add {
+                    margin-top: 4px;
+                    width: 200px;
+                    font-size: 13px;
+                    padding-left: 15px;   
+                }
+            }
+
+            .billing-add {  
+                width: 200px;
+                font-size: 13px;
+                padding-left: 15px;  
+            }
+
+            .billing {
+                font-size: 14px;
+                margin-left: 40px;
+                margin-bottom: 5px;
+                display: none;
+            }
+
+            .shipping {
+                font-size: 14px;
+                margin-left: 40px;
+                margin-bottom: 5px;
+                display: none;
+            }
+        }
+    }
+
+    .order-table {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
+
+.order-nav-title {
+    overflow: hidden;
+    border: 0.5px solid $border-color-2;
+    position: relative;
+    cursor: pointer;
+   
+    .subtotal {
+        float: right;
+        padding-right: 10px;
+    }
+    
+    li {
+        list-style-type: none;
+        padding: 4px 10px;
+        float: left;
+        font-size: 14px;
+    }
+
+    .fa-chevron-circle-down {
+        color: $primary-color;
+        font-size: 18px;
+        padding-left: 8px;
+        transform: rotateX(0deg);
+
+        &.arrow-up {
+            transform: rotateX(180deg);
+        }
+    }
+}
+
+.btn-dropdown {
+    position: relative;
+    float: right;
+
+    ul {
+        position: absolute;
+        background: $drop-menu-color;
+        list-style-type: none;
+        left: 1px;
+        border-radius: 5px;
+        width: 100px;
+        display: none;
+        z-index: 1;
+        
+        li {
+            line-height: 30px;
+            padding-top: 5px;
+            padding-left: 10px;
+            cursor: pointer;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+                display: block;
+                font-size: 13px;
+            }
+
+            &.signout {
+                font-weight: bolder;
+                padding-bottom: 8px;
+            }
+        }
+    }
+
+    .dropdown-content:before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        background: $drop-menu-color;
+        right: 17px;
+        top: -5px;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+    &:hover .dropdown-content {
+        display: block;
+    }
+}

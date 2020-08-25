@@ -1,0 +1,100 @@
+.row-category-btn {
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited,
+    .btn-primary:focus {
+        background-color: $secondary-color !important;
+        border: 2px solid $button-1 !important;
+    }
+}
+
+.search, .add, .save{
+    &.btn-secondary,
+    &.btn-secondary:hover,
+    &.btn-secondary:active,
+    &.btn-secondary:visited,
+    &.btn-secondary:focus {
+        background-color: $primary-color !important;
+        border-color: $primary-color !important;
+    }
+}
+
+.product-details {
+    .qty-up, .qty-down {
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
+            border-color: $primary-color !important;
+        }
+    }   
+}
+
+.btn-a {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    outline: none;
+    background-color: $primary-color;
+    color: $tertiary-color;
+
+    &:hover {
+        opacity: $button-opacity;
+        text-decoration: none;
+        color: $tertiary-color;
+    }
+}
+
+.btn-clear {
+    width: 50px;
+    padding-bottom: 3px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    outline: none;
+    background-color: $secondary-color;
+    color: $tertiary-color;
+
+    &:hover {
+        opacity: $button-opacity;
+        text-decoration: none;
+        color: $tertiary-color;
+    }
+}
+
+.checkout-btn-col, .proceed-to {
+    .btn-checkout {
+        width: 40%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        outline: none;
+    
+        &:hover {
+            opacity: $button-opacity;
+        }
+    }
+    
+    .check {
+        background-color: $primary-color;
+        color: $tertiary-color;
+        font-weight: bold;
+    }
+}

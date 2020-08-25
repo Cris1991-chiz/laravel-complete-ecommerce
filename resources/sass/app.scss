@@ -1,0 +1,37 @@
+// Fonts
+@charset "UTF-8";
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'body/main';
+
+@import 'components/also-bought';
+@import 'components/breadcrumbs';
+@import 'components/category';
+@import 'components/modal';
+@import 'components/products';
+@import 'components/social-media-btn';
+@import 'components/stripe';
+
+@import 'footer/footer';
+
+@import 'input/button';
+@import 'input/input-type';
+
+@import 'navbar/drop-menu';
+@import 'navbar/top-navbar';
+
+@import 'pages/cart.scss';
+@import 'pages/personal-info.scss';
+@import 'pages/checkout.scss';
+@import 'pages/product-view.scss';
+@import 'pages/register.scss';
+@import 'pages/user-account.scss';
+@import 'pages/my-wishlist.scss';
+@import 'pages/my-order.scss';
+@import 'pages/success-payment.scss';
+

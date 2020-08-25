@@ -1,0 +1,12 @@
+<button class="btn btn-primary">DRONES</button>
+<button class="btn btn-primary">PLANES</button>
+<button class="btn btn-primary">HELICOPTERS</button>
+<button class="btn btn-primary">TRUCKS</button>
+<button class="btn btn-primary">BOATS</button>
+<button class="btn btn-primary">CARS</button>
+<button class="btn btn-primary">BATTERIES</button>
+<button class="btn btn-primary">CHARGERS</button>
+<button class="btn btn-primary">RADIOS</button>
+<button class="btn btn-primary">TOOLS</button>
+<button class="btn btn-primary">CONNECTORS</button>
+<button class="btn btn-primary">ELECTRONICS</button>

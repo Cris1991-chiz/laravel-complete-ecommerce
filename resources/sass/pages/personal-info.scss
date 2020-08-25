@@ -1,0 +1,105 @@
+/* personal info */
+.col-personal-info {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.address-container {
+    width: 800px;
+}
+
+.personal-info-content {
+    background-color: $background-color-4;
+    padding: 20px;
+    margin: 20px 20px 10px 0;
+}
+
+.personal-add {
+    margin-bottom: 10px;
+    
+    .billing-title {
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 15px;
+        padding: 7px 2px;
+
+        .personal {
+            font-size: 18px;
+        }
+
+        .manage-add {
+            line-height: 35px;
+            color: $primary-color;
+
+            .fa-chevron-down {
+               font-size: 11px;
+            }
+        }
+    }
+
+    .manage-drop-btn {
+        position: relative;
+        float: right;
+        
+        ul {
+            position: absolute;
+            background: $drop-menu-color;
+            list-style-type: none;
+            border-radius: 5px;
+            width: 100%;
+            display: none;
+            padding-inline-start: 5px;
+            z-index: 1;
+            
+            li {
+                line-height: 20px;
+                padding: 5px;
+                text-align: center;
+                cursor: pointer;
+
+                a {
+                    color: $text-color-3;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+        }
+
+        
+
+        &:hover .manage-content {
+            display: block;
+        }
+    }
+
+    .icon {
+        padding: 7px;
+        border-radius: 4px;
+        background: $secondary-color;
+        color: $tertiary-color;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .address-form {  
+        padding-left: 20px;
+      
+        .btn-radio {
+            padding-bottom: 10px;
+            min-height: 27px;
+            line-height: 27px;
+        }
+
+        input {
+            margin-right: 8px;
+        }
+    }
+}
+
+.order-total {
+
+    .cart-summary {
+        height: 280px;
+        margin-top: 20px;
+    }
+}
