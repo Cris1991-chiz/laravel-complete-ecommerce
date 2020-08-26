@@ -12,7 +12,7 @@ class ProductTableSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 1; $i <= 25; $i++) {
+        for($i = 1; $i <= 2; $i++) {
         Product::create([      
             'name' => 'Phantom 3 Standard Quadcopter Drone with 2.7K HD Video Camera' . $i,
             'slug' => 'drone1-' . $i,
@@ -23,7 +23,7 @@ class ProductTableSeeder extends Seeder
         ]);
         }
 
-        for($i = 1; $i <= 5; $i++) {
+        for($i = 1; $i <= 2; $i++) {
         Product::create([
             'name' => 'DJI Spark, Fly More Combo, Red' . $i,
             'slug' => 'drone2-' . $i,
@@ -34,7 +34,8 @@ class ProductTableSeeder extends Seeder
         ]);
         }
 
-        for($i = 1; $i <= 5; $i++) {
+        
+        for($i = 1; $i <= 2; $i++) {
         Product::create([
             'name' => 'Spark Fly More Combo, Alpine White' . $i,
             'slug' => 'drone3-' . $i,
@@ -45,7 +46,7 @@ class ProductTableSeeder extends Seeder
         ]);
         }
         
-        for($i = 1; $i <= 4; $i++) {
+        
         Product::create([
             'name' => 'Phantom 3 Standard Quadcopter Drone with 2.7K HD Video Camera' . $i,
             'slug' => 'drone4-' . $i,
@@ -54,9 +55,10 @@ class ProductTableSeeder extends Seeder
             'price' => 1599.99,
             'image' => 'drone4.jpg',   
         ]);
-        }
+       
         
-        for($i = 1; $i <= 3; $i++) {
+        
+        for($i = 1; $i <= 2; $i++) {
         Product::create([
             'name' => 'Phantom 3 Advanced Renewed Unit (Renewed)' . $i,
             'slug' => 'drone5-' . $i,
@@ -67,7 +69,7 @@ class ProductTableSeeder extends Seeder
         ]);
         }
         
-        for($i = 1; $i <= 2; $i++) {
+       
         Product::create([
             'name' => 'Inspire 2 Drone Compatible with 5.2K Gimbal Cameras' . $i,
             'slug' => 'drone6-' . $i,
@@ -76,9 +78,9 @@ class ProductTableSeeder extends Seeder
             'price' => 3299.00,
             'image' => 'drone6.jpg',          
         ]);
-        }
+       
         
-        for($i = 1; $i <= 5; $i++) {
+       
         Product::create([
             'name' => 'Mavic 2 Pro UAV with Hasselblad Camera 3-Axis Gimbal HDR 4K Video' . $i,
             'slug' => 'drone7-' . $i,
@@ -87,9 +89,9 @@ class ProductTableSeeder extends Seeder
             'price' => 1354.00,
             'image' => 'drone7.jpg',    
         ]);
-        }
+       
         
-        for($i = 1; $i <= 4; $i++) {
+        
         Product::create([
             'name' => 'Spark Remote Control Combo (White)' . $i,
             'slug' => 'drone8-' . $i,
@@ -98,6 +100,6 @@ class ProductTableSeeder extends Seeder
             'price' => 545.00,
             'image' => 'drone8.jpg',   
         ]);
-        }       
+              
     }
 }

@@ -1,5 +1,7 @@
 @extends('layouts.app-layout')
 
+@section('title', 'Shopping Cart')
+
 @section('content')
 <!-- Search box-->
 <div class="search-box">
@@ -25,6 +27,7 @@
 </div>
 <!-- End of Breadcrumbs-->
 </header>
+<x-alert/>
 <span id="formCart"></span>
 <!-- Cart Section-->
 <div class="btn-home"><a href="{{route('home.index')}}"><i class="fa fa-home"></i></a><span class="select">Shopping Cart</span></div>
@@ -44,14 +47,18 @@
                     </ul>              
                     <div class="product-incart">           
                         <div class="incart-details">
-                            <a href="{{route('product.show', $item->model->slug)}}"><img src="{{asset('storage/images/'.$item->options->image)}}" alt=""></a>
+                            <a href="{{route('product.show', $item->model->slug)}}"><img src="{{asset('storage/images/'.$item->model->image)}}" alt=""></a>
                             <div class="product-title">          
                                 <div class="incart-description">
                                 <a href="{{route('product.show', $item->model->slug)}}">{{$item->name}}</a>
                                 </div>
                                 <div class="incart-btn">
                                     <div class="social-media-btn">
+                                        @if(auth()->user())
                                         <a href="#" class="media-btn-heart to-wishlist" data-id="{{$item->rowId}}"><i class="fas fa-heart"></i></a>
+                                        @else
+                                        <a href="#" class="media-btn-heart to-wishlist-error"><i class="fas fa-heart"></i></a>
+                                        @endif
                                         <a href="#" class="media-btn-trash removeItem" id="btn_cart" data-id="{{$item->rowId}}"><i class="fas fa-trash-alt"></i></a>
                                     </div>                                                                             
                                 </div>
@@ -146,6 +153,13 @@
                     } 
                 }      
             })           
+        });
+
+        $(document).on('click', '.to-wishlist-error', function(event){
+            var success_html = '';
+            success_html += '<div class="error alertMsg" style="background-color: #feefef; color: #da1414; text-align:center;">'
+            +'You must login to store in your wishlist.'+'</div>';
+            $('#formCart').html(success_html);
         });
 
         $(document).on('click', '.removeItem', function(event){

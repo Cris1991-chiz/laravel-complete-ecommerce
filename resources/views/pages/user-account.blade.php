@@ -1,5 +1,7 @@
 @extends('layouts.app-layout')
 
+@section('title', 'My Account')
+
 @section('content')
 
  <!-- Search box-->
@@ -150,7 +152,7 @@
                 window.location.reload();
             });
 
-            $('.btn-edit').click(function (e) {
+            $('.btn-a').click(function (e) {
                 e.preventDefault();
                 var id = $(this).data('id')
                 if(id == 0) {

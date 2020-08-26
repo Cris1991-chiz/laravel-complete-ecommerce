@@ -1,5 +1,7 @@
 @extends('layouts.app-layout')
 
+@section('title', 'Product')
+
 @section('content')
     <!-- Search box-->
     <div class="search-box">
@@ -14,13 +16,13 @@
             @include('partials.components.drop-menu')          
         </div>
     <!-- End of Drop Menu-->
-    </header>  
+    </header>
+    <x-alert/>  
      <!-- Product Details-->
      <section>
          <?php ?>
         <div class="product-view-container">
-            <h4>DJI Phantom 4 Pro Version 2.0 - <span class="product-features">The Phantom 4 Pro V2.0 features new low-noise propellers, 
-                OcuSync, and a redesigned controller.</span></h4>
+            <h4>{{$product->name}} - <span class="product-features">{{$product->details}}</span></h4>
             <div class="col-product">
                 <div class="product-details">
                     <div class="img-container">
@@ -53,7 +55,7 @@
                         <button class="qty-down" data-id="{{$product->id}}"><i class="fa fa-angle-down"></i></button>
                     </div>        
                     <button class="btn btn-secondary add to-cart" data-id="{{$product->id}}">Add to Cart</button>   
-                    <button type="button" class="btn btn-secondary wishlist">Add to Wishlist</button>
+                    <button type="button" class="btn btn-secondary wishlist" data-id="{{$product->id}}">Add to Wishlist</button>
                     <hr>
                     <p>Share:</p>
                     <div class="social-media-btn">
@@ -91,7 +93,7 @@
     </section>
     <!--Products also bought-->
 
-    @include('partials.addtocart-modal')
+    @include('partials.modal.addtocart-modal')
         
 @endsection
 
@@ -119,12 +121,14 @@
                     dataType: "json",
                     success: function(response) {          
                         $("#cartCount").html(response.count);
+                        $("#cartContent").load(location.href+" #cartContent>*","");
                         $("#msg-response").html(response.message);                                                         
                     },                           
                 })
                 return false; 
             }           
         });
+
          
         const up = $('.qty-up');
         const down  = $('.qty-down');
@@ -207,6 +211,19 @@
 
         btnRight.addEventListener('click', function() {
             document.getElementById('productslider').scrollLeft += 110;
+        });
+
+        //Descrition click to view event
+        $('#btn-desc').click(function(){
+                    
+            $(".col-reviews").hide();
+            $(".col-description").show();               
+        });
+
+        $('#btn-rev').click(function(){
+                 
+            $(".col-reviews").show();
+            $(".col-description").hide();            
         });
     });
 </script>

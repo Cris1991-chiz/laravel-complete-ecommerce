@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Ecommerce Landing Page</title>
+    <title>Shop 'n' Go | @yield('title', '')</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -26,8 +26,7 @@
                     @include('partials.components.nav')
                    
                 </div>
-            </nav>
-            <x-alert/>    
+            </nav>    
         @yield('content')  
     </div>
     <!-- Modal -->

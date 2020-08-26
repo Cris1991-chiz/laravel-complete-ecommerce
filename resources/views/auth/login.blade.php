@@ -36,9 +36,9 @@
             <div class="modal-footer"> 
                 <button type="button" class="btn btn-secondary cancel" data-dismiss="modal">Cancel</button>
                 @if (Route::has('password.request'))
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                    <span class="forgot-psw"><a href="{{ route('password.request') }}">
                         {{ __('Forgot Your Password?') }}
-                    </a>
+                    </a></span>
                 @endif               
             </div>
         </form>

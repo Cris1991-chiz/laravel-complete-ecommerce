@@ -1,5 +1,7 @@
 @extends('layouts.app-layout')
 
+@section('title', 'Checkout')
+
 @section('stripe-css')
 
     <script src="https://js.stripe.com/v3/"></script>

@@ -1,5 +1,7 @@
 @extends('layouts.app-layout')
 
+@section('title', 'My Wish List')
+
 @section('content')
 
  <!-- Search box-->

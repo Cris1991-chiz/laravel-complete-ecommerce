@@ -10975,6 +10975,11 @@ header {
   margin-top: 30px;
 }
 
+.products-also-bought .products-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .products-also-bought .also-bought-title p {
   font-size: 20px;
   font-weight: bold;
@@ -12039,7 +12044,7 @@ nav {
 
 .incart-container .cart ul.cart-nav-tag li {
   float: right;
-  padding: 4px 30px;
+  padding: 4px 20px;
   font-size: 13px;
   font-weight: bold;
   color: #ffffff;
@@ -12090,21 +12095,22 @@ nav {
 
 .incart-container .cart .product-incart .row-price-qty {
   float: right;
+  width: 195px;
 }
 
 .incart-container .cart .product-incart .row-price-qty .col-price-qty {
   display: flex;
-  padding-right: 30px;
+  padding-right: 10px;
   font-size: 14px;
 }
 
 .incart-container .cart .product-incart .row-price-qty .col-price-qty .product-qty {
   margin-top: 4px;
-  padding-right: 30px;
+  padding-right: 10px;
 }
 
 .incart-container .cart .product-incart .row-price-qty .col-price-qty .product-qty input {
-  width: 40px;
+  width: 35px;
   height: 25px;
   border: 0.5px solid #dcdcdc;
   text-align: center;
@@ -12129,8 +12135,19 @@ nav {
 }
 
 .incart-container .cart .product-incart .row-price-qty .price {
-  padding-left: 10px;
+  padding-left: 12px;
   font-size: 15px;
+}
+
+.empty-cart {
+  margin-top: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.empty-cart img {
+  width: 200px;
 }
 
 /* cart summary and cart total */
@@ -12387,7 +12404,7 @@ nav {
 
 .checkout-incart-container .cart ul.cart-nav-tag li {
   float: right;
-  padding: 4px 30px;
+  padding: 4px 20px;
   font-size: 13px;
   font-weight: bold;
   color: #ffffff;
@@ -12432,38 +12449,30 @@ nav {
 
 .checkout-incart-container .cart .product-incart .row-price-qty {
   float: right;
+  width: 167px;
 }
 
 .checkout-incart-container .cart .product-incart .row-price-qty .col-price-qty {
   display: flex;
-  padding-right: 30px;
+  padding-right: 10px;
   font-size: 14px;
 }
 
 .checkout-incart-container .cart .product-incart .row-price-qty .col-price-qty .product-qty {
   margin-top: 4px;
-  padding-right: 55px;
+  padding-right: 10px;
 }
 
 .checkout-incart-container .cart .product-incart .row-price-qty .col-price-qty .product-qty input {
-  width: 40px;
+  width: 35px;
   height: 25px;
   border: 0.5px solid #dcdcdc;
   text-align: center;
 }
 
 .checkout-incart-container .cart .product-incart .row-price-qty .price {
-  padding-left: 10px;
+  padding-left: 40px;
   font-size: 15px;
-}
-
-.empty-cart {
-  margin-top: 20px;
-  width: 200px;
-}
-
-.empty-cart img {
-  width: 200px;
 }
 
 /* payment and shipping options */
@@ -13154,6 +13163,7 @@ nav {
 
 .my-wishlist .product-wishlist .wishlist-btn {
   float: right;
+  cursor: pointer;
 }
 
 .my-wishlist .product-wishlist .wishlist-btn .col-btn {

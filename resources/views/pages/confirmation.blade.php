@@ -1,5 +1,7 @@
 @extends('layouts.app-layout')
 
+@section('title', 'Thankyou')
+
 @section('content')
 
 <div class="thanks-content">

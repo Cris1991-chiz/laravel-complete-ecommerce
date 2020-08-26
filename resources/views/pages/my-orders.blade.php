@@ -1,5 +1,7 @@
 @extends('layouts.app-layout')
 
+@section('title', 'My Orders')
+
 @section('content')
 
  <!-- Search box-->

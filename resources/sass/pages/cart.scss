@@ -46,7 +46,7 @@
 
             li {    
                 float: right;
-                padding: 4px 30px;
+                padding: 4px 20px;
                 font-size: 13px;
                 font-weight: bold;
                 color: $tertiary-color;
@@ -100,18 +100,19 @@
 
             .row-price-qty {
                 float: right;
+                width: 195px;
                 
                 .col-price-qty {
                     display: flex;
-                    padding-right: 30px;
+                    padding-right: 10px;
                     font-size: 14px;
 
                     .product-qty {
                         margin-top: 4px;
-                        padding-right: 30px;
+                        padding-right: 10px;
                         
                         input {
-                            width: 40px;
+                            width: 35px;
                             height: 25px;
                             border: 0.5px solid $border-color-2;
                             text-align: center;
@@ -133,11 +134,22 @@
                 }
 
                 .price {  
-                    padding-left: 10px;
+                    padding-left: 12px;
                     font-size: 15px;
                 }
             }
         }
+    }
+}
+
+.empty-cart {
+    margin-top: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    img {
+        width: 200px;
     }
 }
 

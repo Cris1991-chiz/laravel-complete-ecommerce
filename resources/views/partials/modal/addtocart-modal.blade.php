@@ -15,7 +15,7 @@
                         <span id="msg-response"></span>
                     </div>
                     <div class="modal-footer"> 
-                        <span type="button" class="btn btn-secondary add shop" data-dismiss="modal">Continue Shopping</span>
+                        <span type="button" class="btn btn-secondary add btn-continue" style="justify-content: right" data-dismiss="modal">Continue Shopping</span>
                     </div>
                 </div>
                 </div>

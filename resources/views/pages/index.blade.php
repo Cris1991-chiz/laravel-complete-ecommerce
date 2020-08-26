@@ -15,7 +15,7 @@
     </div>
 <!-- End of Drop Menu-->
 </header>
-
+<x-alert/>
 <!-- End of Navigation Bar-->
 <!-- Carousel Slider-->
 <div class="slider">

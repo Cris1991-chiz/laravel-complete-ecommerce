@@ -37352,9 +37352,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Cris-PC\Desktop\New folder\Cris\eccomerce-project\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\Cris-PC\Desktop\New folder\Cris\eccomerce-project\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Users\Cris-PC\Desktop\New folder\Cris\eccomerce-project\resources\sass\media.scss */"./resources/sass/media.scss");
+__webpack_require__(/*! C:\Users\Cris-PC\Desktop\New folder\Cris\laravel-ecommerce-project\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\Cris-PC\Desktop\New folder\Cris\laravel-ecommerce-project\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\Cris-PC\Desktop\New folder\Cris\laravel-ecommerce-project\resources\sass\media.scss */"./resources/sass/media.scss");
 
 
 /***/ })

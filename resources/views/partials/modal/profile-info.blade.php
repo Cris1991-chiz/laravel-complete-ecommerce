@@ -28,7 +28,7 @@
                         <input type="password" placeholder="Confirm Password" id="confirmPassword" name="confirm_password">
                     </div> 
         
-                    <button type="submit" class="save-info">Save</button>                                   
+                    <button type="submit" style="margin-bottom: 12px" class="save-info">Save</button>                                   
                 </div>
             </div>
             </form>

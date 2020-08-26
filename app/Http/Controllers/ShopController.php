@@ -15,7 +15,7 @@ class ShopController extends Controller
     public function index()
     {
        
-        $products = Product::inRandomOrder()->take(12)->get();
+        $products = Product::inRandomOrder()->get();
 
         return view('pages.index', compact('products'));
     
